@@ -27,3 +27,5 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+_This project uses [pnpm](https://pnpm.io/) as the package manager. You can use `npm` or `yarn` if you prefer._
