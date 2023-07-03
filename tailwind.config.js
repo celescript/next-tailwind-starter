@@ -8,9 +8,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      white: '#E2D9D2',
+      offwhite: '#E2D9D2',
+      white: '#FFFFFF',
       black: '#1F1F1F',
       blue: '#2D79C7',
+      yellow: '#F2C94C',
+      red: '#EB5757',
     },
   },
   plugins: [],

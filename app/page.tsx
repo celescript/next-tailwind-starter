@@ -1,8 +1,11 @@
+import Button from '@/components/atoms/button'
+import Icon from '@/components/atoms/icon'
+import Text from '@/components/atoms/text'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='bg-white min-h-screen mx-auto p-[10%]'>
+    <div className='bg-offwhite min-h-screen mx-auto p-[10%]'>
       <h1 className='text-3xl text-center font-regular mb-8'>
         <span className='text-4xl font-bold font-mono'>atomic design </span>
         <Image
@@ -59,13 +62,51 @@ export default function Home() {
           elements. I&apos;ll show you small examples for each of the five
           stages of atomic design.
         </p>
-        <ul className='mt-8 flex flex-col items-center'>
-          <li className='w-full'>
-            <h3 className='text-center font-bold font-mono text-xl border-b border-dashed'>
-              atoms
-            </h3>
-          </li>
-        </ul>
+        <div className='mt-8 flex flex-col items-center'>
+          <h3 className='text-center font-bold font-mono text-xl border-b border-dashed w-full'>
+            atoms
+          </h3>
+          <div className='flex justify-center gap-2 flex-col py-2'>
+            {/* Atom 1 */}
+            <div className='p-2 rounded-lg bg-white    '>
+              <p className='text-left text-black text-opacity-70 text-sm font-mono'>
+                components/atoms/button.tsx
+              </p>
+              <span className='flex justify-center'>
+                <Button color='red'>
+                  <Image
+                    src='/mock-images/heart.svg'
+                    alt='Heart'
+                    width={20}
+                    height={20}
+                  />
+                </Button>
+              </span>
+            </div>
+
+            {/* Atom 2 */}
+            <div className='p-2 rounded-lg bg-white    '>
+              <p className='text-left text-black text-opacity-70 text-sm font-mono'>
+                components/atoms/text.tsx
+              </p>
+              <span className='flex justify-center'>
+                <Text>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </Text>
+              </span>
+            </div>
+
+            {/* Atom 3 */}
+            <div className='p-2 rounded-lg bg-white    '>
+              <p className='text-left text-black text-opacity-70 text-sm font-mono'>
+                components/atoms/icon.tsx
+              </p>
+              <span className='flex justify-center'>
+                <Icon source='/mock-images/cat1.jpg' />
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
