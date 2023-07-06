@@ -25,7 +25,7 @@ export default function Button({
     <button
       className={twMerge(
         clsx(
-          'rounded-full flex items-center justify-center text-opacity-70 p-1 m-2',
+          'rounded-full flex items-center justify-center text-opacity-70 p-1',
           buttonColorStyles[color],
           className
         )

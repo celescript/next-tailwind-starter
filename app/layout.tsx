@@ -1,3 +1,4 @@
+import { clx } from '@/utils/clx'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -14,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en'>
+      <body className={clx(inter.className, 'bg-offwhite')}>{children}</body>
     </html>
   )
 }
