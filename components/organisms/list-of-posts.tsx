@@ -1,4 +1,4 @@
-import Post from '../molecules/post'
+import Post from '@/components/molecules/post'
 import { PostType } from '@/types'
 
 export default function ListOfPosts({ posts }: { posts: PostType[] }) {

@@ -18,7 +18,7 @@
   }
 
   .atomic-list {
-    @apply flex justify-center gap-2 flex-col items-stretch;
+    @apply flex justify-center gap-2 flex-row items-center flex-wrap;
   }
 
   .atomic-mock {

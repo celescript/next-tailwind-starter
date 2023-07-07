@@ -1,4 +1,4 @@
-## Next.js Starter with Atomic Design
+## Next.js Starter with Atomic Design and Tailwind CSS
 
 This is a starter repository for Next.js [Learn](https://nextjs.org/learn) projects. It includes the following features configured:
 
@@ -12,17 +12,17 @@ I also recommend this VS Code extensions: [Tailwind CSS IntelliSense](https://ma
 
 ## Atomic Design
 
-The folder structure is organized according to the [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) methodology. The components are organized in the following folders:
+The folder structure is organized according to the [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) methodology. For this repository, the components are organized in the following folders:
 
 - **atoms**: the smallest components, such as buttons, inputs, etc.
 - **molecules**: components that are composed of atoms.
 - **organisms**: components that are composed of atoms, molecules and other organisms.
-- **templates**: components that are composed of atoms, molecules, organisms and other templates.
-- **pages**: components that are composed of atoms, molecules, organisms, templates and other pages.
 
-I created some components so you can see how they work. Feel free to delete them and create your own.
+There are some components so you can see how they work. Feel free to delete them and create your own.
 
-_Remember to delete everything inside the page.tsx file before starting your project. I also added some @layers inside of globals.css so you can check how they work and implement them in your project._
+I also added some `@layers` inside of `globals.css` so you can check how they work and implement them in your project.
+
+There is a `types.d.ts` file, this file is used to declare types and import them in the project. I added some types to help you get started.
 
 ## Getting Started
 
@@ -42,9 +42,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 _This project uses [pnpm](https://pnpm.io/) as the package manager. You can use `npm` or `yarn` if you prefer._
 
-Feel free to experiment with the folder structure to fit your needs. If you find an issue or have recomendations, please, open an issue or pull request :)
+## TailwindCSS helper: clx
 
-clx is a helper function that allows you to use tailwind-merge and clsx at the same time.
+> /utils/clx.ts
+
+clx is a helper function that allows you to use [Tailwind-Merge](https://www.npmjs.com/package/tailwind-merge) and [clsx](https://www.npmjs.com/package/clsx) together.
 
 Let's say you have the following component:
 
@@ -59,3 +61,5 @@ const Input = ({ isError, ...props }) => (
 ```
 
 If the error prop is `true`, the className will first be resolved to `"p-4 bg-blue bg-red"` by clsx, and then to `"p-4 bg-red"` by twMerge.
+
+**Feel free to experiment with the folder structure to fit your needs. If you find an issue or have recomendations, please, open an issue or pull request :)**

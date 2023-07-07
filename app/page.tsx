@@ -1,28 +1,23 @@
+import Image from 'next/image'
+
 import Avatar from '@/components/atoms/avatar'
 import Button from '@/components/atoms/button'
 import Post from '@/components/molecules/post'
 import ListOfPosts from '@/components/organisms/list-of-posts'
-import Image from 'next/image'
 
-import { Metadata } from 'next'
 import { PostType } from '@/types'
-
-export const metadata: Metadata = {
-  title: 'Next.js Atomic Design Starter',
-}
-
 export const posts: PostType[] = [
   {
     avatar: '/mock-images/peep-1.png',
-    text: '"Just had the most amazing pizza for dinner! 🍕😍 #Foodie"',
+    text: 'Just had the most amazing pizza for dinner! 🍕😍 #Foodie',
   },
   {
     avatar: '/mock-images/peep-2.png',
-    text: '"I love the new @nextjs version! 🎉 #NextJS"',
+    text: 'I love the new @nextjs version! 🎉 #NextJS',
   },
   {
     avatar: '/mock-images/peep-3.png',
-    text: '"I just published my first blog post! 📝 #Dev"',
+    text: 'I just published my first blog post! 📝 #Dev',
   },
 ]
 
@@ -80,17 +75,18 @@ export default function Home() {
       <hr />
 
       <p className='py-4'>
-        This repo uses Atomic Design which is a methodology for creating design
-        systems and building user interfaces (UIs) in a structured and scalable
-        way.
-      </p>
-
-      <p>
+        This repo uses Atomic Design, a methodology for creating design systems
+        and building user interfaces (UIs) in a structured and scalable way.
         Atomic design breaks down UI components into smaller, more manageable
-        elements. For this specific repositoy I{"'"}ll be using the following
-        atomic design concepts: atoms, molecules and organisms. You can read
-        more about Atomic Design in the following link:{' '}
-        <a href='https://bradfrost.com/blog/post/atomic-web-design/'>
+        elements such as atoms, molecules, and organisms. For this specific
+        repository, I&#39;ll be utilizing the concepts of atoms, molecules, and
+        organisms. If you&#39;d like to learn more about Atomic Design, you can
+        visit the following link:{' '}
+        <a
+          className='text-blue hover:underline'
+          target='_blank'
+          href='https://bradfrost.com/blog/post/atomic-web-design/'
+        >
           Atomic Design
         </a>
       </p>
@@ -149,7 +145,7 @@ export default function Home() {
           {/* Organisms 1 */}
           <div className='atomic-mock'>
             <p className='text-left text-black text-opacity-70 text-sm font-mono mb-2'>
-              components/atoms/list-of-posts.tsx
+              components/organisms/list-of-posts.tsx
             </p>
             <span className='flex justify-center'>
               <ListOfPosts posts={posts} />

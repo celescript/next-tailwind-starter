@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import Avatar from '../atoms/avatar'
-import Button from '../atoms/button'
+
+import Avatar from '@/components/atoms/avatar'
+import Button from '@/components/atoms/button'
 import { PostType } from '@/types'
 
 export default function Post({
