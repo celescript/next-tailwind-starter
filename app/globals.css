@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-*: initial;
+  --color-offwhite: #E2D9D2;
+  --color-white: #FFFFFF;
+  --color-black: #1F1F1F;
+  --color-blue: #2D79C7;
+  --color-yellow: #F2C94C;
+  --color-red: #EB5757;
+}
 
 @layer base {
   h2 {

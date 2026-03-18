@@ -48,7 +48,7 @@ export default function Home() {
             alt='Next.js'
             width={65}
             height={65}
-            className='w-[80px] invert-1'
+            className='w-[80px] invert'
           />
         </li>
         <li>
@@ -85,6 +85,7 @@ export default function Home() {
         <a
           className='text-blue hover:underline'
           target='_blank'
+          rel='noopener noreferrer'
           href='https://bradfrost.com/blog/post/atomic-web-design/'
         >
           Atomic Design
@@ -96,7 +97,7 @@ export default function Home() {
         <div className='atomic-list'>
           {/* Atom 1 */}
           <div className='atomic-mock'>
-            <p className='text-left text-black text-opacity-70 text-sm font-mono'>
+            <p className='text-left text-black/70 text-sm font-mono'>
               components/atoms/button.tsx
             </p>
             <span className='flex justify-center'>
@@ -114,7 +115,7 @@ export default function Home() {
 
           {/* Atom 2 */}
           <div className='atomic-mock'>
-            <p className='text-left text-black text-opacity-70 text-sm font-mono'>
+            <p className='text-left text-black/70 text-sm font-mono'>
               components/atoms/icon.tsx
             </p>
             <span className='flex justify-center'>
@@ -129,7 +130,7 @@ export default function Home() {
         <div className='atomic-list'>
           {/* Molecule 1 */}
           <div className='atomic-mock'>
-            <p className='text-left text-black text-opacity-70 text-sm font-mono mb-2'>
+            <p className='text-left text-black/70 text-sm font-mono mb-2'>
               components/molecules/post.tsx
             </p>
             <span className='flex justify-center'>
@@ -144,7 +145,7 @@ export default function Home() {
         <div className='atomic-list'>
           {/* Organisms 1 */}
           <div className='atomic-mock'>
-            <p className='text-left text-black text-opacity-70 text-sm font-mono mb-2'>
+            <p className='text-left text-black/70 text-sm font-mono mb-2'>
               components/organisms/list-of-posts.tsx
             </p>
             <span className='flex justify-center'>

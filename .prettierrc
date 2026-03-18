@@ -10,7 +10,7 @@
   "printWidth": 80,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
-  "jsxBracketSameLine": false,
+
   "requirePragma": false,
   "semi": false,
   "singleQuote": true,

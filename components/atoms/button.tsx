@@ -8,9 +8,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const buttonColorStyles = {
-  red: 'hover:fill-red hover:bg-red hover:bg-opacity-50  hover:text-red',
-  yellow:
-    'hover:fill-yellow hover:bg-yellow hover:bg-opacity-50 hover:text-yellow',
+  red: 'hover:fill-red hover:bg-red/50 hover:text-red',
+  yellow: 'hover:fill-yellow hover:bg-yellow/50 hover:text-yellow',
 }
 
 export default function Button({
@@ -22,7 +21,7 @@ export default function Button({
   return (
     <button
       className={clx(
-        'rounded-full flex items-center justify-center text-opacity-70 p-1',
+        'rounded-full flex items-center justify-center p-1',
         buttonColorStyles[color],
         className
       )}
